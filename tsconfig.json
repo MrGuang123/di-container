@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    /* 语言和环境 */
+    "target": "ES2020",                          /* 设置编译后的 JavaScript 版本 */
+    "lib": ["ES2020"],                           /* 指定要包含的库文件 */
+    "experimentalDecorators": true,              /* 启用装饰器实验性功能 */
+    "emitDecoratorMetadata": true,               /* 为装饰器生成元数据 */
+
+    /* 模块 */
+    "module": "commonjs",                        /* 指定模块代码生成 */
+    "rootDir": "./",                             /* 指定源文件的根目录 */
+    "moduleResolution": "node",                  /* 使用 Node.js 模块解析策略 */
+    "baseUrl": "./",                             /* 解析非相对模块名的基准目录 */
+    "resolveJsonModule": true,                   /* 允许导入 JSON 文件 */
+
+    /* 输出 */
+    "outDir": "./dist",                          /* 指定输出目录 */
+    "sourceMap": true,                           /* 生成 source map 文件 */
+    "declaration": true,                         /* 生成 .d.ts 类型声明文件 */
+    "declarationMap": true,                      /* 为 .d.ts 文件生成 source map */
+    "removeComments": false,                     /* 保留注释 */
+
+    /* 类型检查 */
+    "strict": true,                              /* 启用所有严格的类型检查选项 */
+    "noImplicitAny": true,                       /* 禁止隐式 any 类型 */
+    "strictNullChecks": true,                    /* 启用严格的 null 检查 */
+    "strictFunctionTypes": true,                 /* 启用严格的函数类型检查 */
+    "strictBindCallApply": true,                 /* 启用严格的 bind/call/apply 检查 */
+    "strictPropertyInitialization": true,        /* 启用类属性初始化的严格检查 */
+    "noImplicitThis": true,                      /* 禁止隐式 this */
+    "alwaysStrict": true,                        /* 以严格模式解析并为每个源文件生成 "use strict" */
+
+    /* 额外检查 */
+    "noUnusedLocals": true,                      /* 报告未使用的局部变量 */
+    "noUnusedParameters": true,                  /* 报告未使用的参数 */
+    "noImplicitReturns": true,                   /* 报告函数的某些代码路径没有返回值 */
+    "noFallthroughCasesInSwitch": true,         /* 报告 switch 语句的 fallthrough 错误 */
+
+    /* 互操作性约束 */
+    "esModuleInterop": true,                     /* 启用 ES 模块互操作性 */
+    "allowSyntheticDefaultImports": true,        /* 允许合成默认导入 */
+    "forceConsistentCasingInFileNames": true,    /* 强制文件名大小写一致 */
+
+    /* 跳过库检查 */
+    "skipLibCheck": true                         /* 跳过声明文件的类型检查 */
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
+
