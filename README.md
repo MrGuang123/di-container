@@ -18,3 +18,9 @@
 - **strict**: 启用严格模式类型检查
 - **target**: ES2020
 - **module**: CommonJS
+
+## 查看流程图
+
+1. 复制 [src/mermaid.md](src/mermaid.md) 文件中的内容
+2. 打开 [https://mermaid.live/edit](https://mermaid.live/edit)
+3. 将复制的内容粘贴到编辑器中即可查看 DI 容器的流程图
