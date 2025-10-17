@@ -154,6 +154,11 @@ export class Container {
       (instance as any as OnInit).onInit();
     }
 
+    if (scope === Scope.Singleton) {
+      // 保存当前容器的单例实例，后续 resolve 直接复用
+      this.singletons.set(provider.token, instance);
+    }
+
     return instance as T;
   }
 }
